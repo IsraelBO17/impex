@@ -1,21 +1,12 @@
 import Link from "next/link"
-import MainSlide from "@/components/home/mainSlide"
-import ItemSkeleton from "@/components/main/item";
+import MainSlide from "@/components/index/mainSlide"
+import Categories from "@/components/index/categories";
+import ItemSkeleton from "@/components/index/item";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { TbDiscount2 } from "react-icons/tb";
 import { TbShoppingBag } from "react-icons/tb";
 import { TbCreditCard } from "react-icons/tb";
 import { TbTruckDelivery } from "react-icons/tb";
-import { TbHanger } from "react-icons/tb";
-import { GiLipstick } from "react-icons/gi";
-import { IoHardwareChipOutline } from "react-icons/io5";
-import { LuBaby } from "react-icons/lu";
-import { RiComputerLine } from "react-icons/ri";
-import { IoIosFitness } from "react-icons/io";
-import { MdOutlineDirectionsCarFilled } from "react-icons/md";
-import { GoHome } from "react-icons/go";
-import { LiaTractorSolid } from "react-icons/lia";
-import { IoEllipsisHorizontalCircle } from "react-icons/io5";
 
 const HomePage = () => {
   return (
@@ -25,20 +16,8 @@ const HomePage = () => {
       <section className='px-3 mt-3 md:p-0'>
         <div className='grid lg:grid-cols-10 lg:gap-x-3 xl:grid-cols-12'>
           {/* Desktop Side Nav */}
-          <div className='hidden lg:block lg:h-[400px] xl:h-auto col-span-3 xl:col-span-2 bg-white p-2 rounded shadow-lg overflow-y-scroll'>
-            <h5 className='text-destructive text-sm uppercase font-extrabold mb-2'>Categories</h5>
-            <div className='flex flex-col gap-y-4 px-2'>
-              <Link href='' className='flex items-center gap-x-3 text-sm'><TbHanger className='text-lg' />Fashion</Link>
-              <Link href='' className='flex items-center gap-x-3 text-sm'><GiLipstick className='text-lg' />Health & Beauty</Link>
-              <Link href='' className='flex items-center gap-x-3 text-sm'><IoHardwareChipOutline className='text-lg' />Electronics</Link>
-              <Link href='' className='flex items-center gap-x-3 text-sm'><LuBaby className='text-lg' />Baby Products</Link>
-              <Link href='' className='flex items-center gap-x-3 text-sm'><RiComputerLine className='text-lg' />Computing</Link>
-              <Link href='' className='flex items-center gap-x-3 text-sm'><IoIosFitness className='text-lg' />Sport & Fitness</Link>
-              <Link href='' className='flex items-center gap-x-3 text-sm'><MdOutlineDirectionsCarFilled className='text-lg' />Automobile</Link>
-              <Link href='' className='flex items-center gap-x-3 text-sm'><GoHome className='text-lg' />Home & Offices</Link>
-              <Link href='' className='flex items-center gap-x-3 text-sm'><LiaTractorSolid className='text-lg' />Machinery</Link>
-              <Link href='' className='flex items-center gap-x-3 text-sm'><IoEllipsisHorizontalCircle className='text-lg' />Other Categories</Link>
-            </div>
+          <div className='hidden lg:block lg:h-96 2xl:h-auto col-span-3 xl:col-span-2 bg-white p-2 rounded shadow-lg overflow-y-scroll'>
+            <Categories />
           </div>
           {/* Main Carousel */}
           <div className='lg:col-span-7 xl:col-span-8 shadow-lg'>

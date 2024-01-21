@@ -1,6 +1,6 @@
 import React from 'react'
-import SiteHeader from '@/components/main/header'
-import SiteFooter from '@/components/main/footer'
+import SiteHeader from '@/components/index/header'
+import SiteFooter from '@/components/index/footer'
 
 const HomeLayout = ({
   children,
@@ -10,7 +10,7 @@ const HomeLayout = ({
   return (
     <>
       <SiteHeader />
-      {children}
+        {children}
       <SiteFooter />
     </>
   )
