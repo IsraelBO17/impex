@@ -66,7 +66,7 @@ const SiteHeader = () => {
             <div className='flex items-center gap-x-5 px-4 lg:hidden'>
               <LuSearch className='w-[25px] h-[25px]' />
               <LuUser2 className='w-[25px] h-[25px]' />
-              <Link href='/' className=''><LuShoppingCart className='w-[25px] h-[25px]' /><span className="text-xs font-semibold absolute -top-2.5 left-3.5 py-0.5 px-2 leading-[initial] bg-destructive text-white p-2 rounded-full">0</span></Link>
+              <Link href='/cart' className=''><LuShoppingCart className='w-[25px] h-[25px]' /><span className="text-xs font-semibold absolute -top-2.5 left-3.5 py-0.5 px-2 leading-[initial] bg-destructive text-white p-2 rounded-full">0</span></Link>
             </div>
           </div>
 
@@ -99,7 +99,7 @@ const SiteHeader = () => {
               <small className='text-xs font-semibold'>Account</small>
               <FaChevronDown className='w-3 h-3' />
             </button>
-            <Link href='/' className='flex items-center space-x-2 border-2 border-orange rounded-sm text-orange p-2'>
+            <Link href='/cart' className='flex items-center space-x-2 border-2 border-orange rounded-sm text-orange p-2'>
               <LuShoppingCart className='w-4 h-4' />
               <small className='text-xs font-semibold'>My Cart</small>
               <span className="text-xs font-semibold absolute -top-3 -right-2.5 py-0.5 px-2 leading-[initial] bg-destructive text-white p-2 rounded-full">0</span>
