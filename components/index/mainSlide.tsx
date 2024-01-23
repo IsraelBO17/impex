@@ -29,7 +29,7 @@ const MainSlide = () => {
                 loop: true
             }}
             >
-            <CarouselContent className='ml-0 h-60 md:h-auto lg:h-96 2xl:h-auto'>
+            <CarouselContent className='ml-0 h-60 md:h-auto lg:h-96 xl:h-[500px]'>
                 <CarouselItem className='pl-0'><Image src={s1} alt='slide-1' className='h-full sm:h-auto lg:h-full' /></CarouselItem>
                 <CarouselItem className='pl-0'><Image src={s2} alt='slide-2' className='h-full sm:h-auto lg:h-full' /></CarouselItem>
                 <CarouselItem className='pl-0'><Image src={s3} alt='slide-3' className='h-full sm:h-auto lg:h-full' /></CarouselItem>

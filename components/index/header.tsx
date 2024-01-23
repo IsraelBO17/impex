@@ -54,8 +54,8 @@ const SiteHeader = () => {
         </div>
       </div>
 
-      <header className='border-b border-[#f3f3f3] pt-5 w-full bg-white z-10 top-0 lg:pb-5'>
-        <div className="container lg:max-w-11/12 lg:flex lg:justify-between lg:items-center">
+      <header className='border-b border-[#f3f3f3] pt-5 w-full bg-white z-10 lg:pb-5'>
+        <div className="container lg:max-w-[90%] lg:flex lg:justify-between lg:items-center">
 
           {/* Base View */}
           <div className="flex justify-between">

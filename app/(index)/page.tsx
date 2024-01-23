@@ -1,7 +1,7 @@
 import Link from "next/link"
 import MainSlide from "@/components/index/mainSlide"
 import Categories from "@/components/index/categories";
-import ItemSkeleton from "@/components/index/item";
+import ItemSkeleton from "@/components/index/itemskeleton";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { TbDiscount2 } from "react-icons/tb";
 import { TbShoppingBag } from "react-icons/tb";
@@ -10,13 +10,12 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 const HomePage = () => {
   return (
-    <main className='container px-0 flex flex-col gap-y-3 md:px-3 md:max-w-[90%] lg:max-w-[80%]'>
-
+    <>
       {/* Main Carousel, Desktop Side Nav, Side Carousel  */}
       <section className='px-3 mt-3 md:p-0'>
         <div className='grid lg:grid-cols-10 lg:gap-x-3 xl:grid-cols-12'>
           {/* Desktop Side Nav */}
-          <div className='hidden lg:block lg:h-96 2xl:h-auto col-span-3 xl:col-span-2 bg-white p-2 rounded shadow-lg overflow-y-scroll'>
+          <div className='hidden lg:block lg:h-96 xl:h-[500px] col-span-3 xl:col-span-2 bg-white p-2 rounded shadow-lg overflow-y-scroll'>
             <Categories />
           </div>
           {/* Main Carousel */}
@@ -139,8 +138,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-    </main>
+    </>
   )
 }
 

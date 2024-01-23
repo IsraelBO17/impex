@@ -42,35 +42,35 @@ const SiteFooter = () => {
                 <div className='px-3 my-3 lg:col-span-2'>
                     <h6 className='text-xs font-semibold leading-tight mb-2'>About Impex</h6>
                     <ul className=''>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>Contact us</Link></li>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>About us</Link></li>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>Careers</Link></li>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>Terms & Conditoins</Link></li>
+                        <li><Link href='/contact-us' className='text-footer-link text-footer-gray'>Contact us</Link></li>
+                        <li><Link href='/about-us' className='text-footer-link text-footer-gray'>About us</Link></li>
+                        <li><Link href='/careers' className='text-footer-link text-footer-gray'>Careers</Link></li>
+                        <li><Link href='/terms-and-conditions' className='text-footer-link text-footer-gray'>Terms & Conditoins</Link></li>
                     </ul>
                 </div>
                 <div className='px-3 my-3 lg:col-span-2'>
                     <h6 className='text-xs font-semibold leading-tight mb-2'>Help Center</h6>
                     <ul className=''>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>How to shop on impex</Link></li>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>Report a product</Link></li>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>Delivery Options</Link></li>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>Making payments</Link></li>
+                        <li><Link href='/how-to-shop' className='text-footer-link text-footer-gray'>How to shop on impex</Link></li>
+                        <li><Link href='/report-product' className='text-footer-link text-footer-gray'>Report a product</Link></li>
+                        <li><Link href='/delivery-options' className='text-footer-link text-footer-gray'>Delivery Options</Link></li>
+                        <li><Link href='/making-payments' className='text-footer-link text-footer-gray'>Making payments</Link></li>
                     </ul>
                 </div>
                 <div className='px-3 my-3 lg:col-span-2'>
                     <h6 className='text-xs font-semibold leading-tight mb-2'>Business Policies</h6>
                     <ul className=''>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>FAQs</Link></li>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>Return policy</Link></li>
+                        <li><Link href='/faqs' className='text-footer-link text-footer-gray'>FAQs</Link></li>
+                        <li><Link href='/return-policy' className='text-footer-link text-footer-gray'>Return policy</Link></li>
                         <li><Link href='/' className='text-footer-link text-footer-gray'>Buyer&apos;s protection</Link></li>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>Authentic Items Policy</Link></li>
+                        <li><Link href='/items-policy' className='text-footer-link text-footer-gray'>Authentic Items Policy</Link></li>
                     </ul>
                 </div>
                 <div className='px-3 my-3 lg:col-span-2'>
                     <h6 className='text-xs font-semibold leading-tight mb-2'>More Info</h6>
                     <ul className=''>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>Site Map</Link></li>
-                        <li><Link href='/' className='text-footer-link text-footer-gray'>Privacy policy</Link></li>
+                        <li><Link href='/site-map' className='text-footer-link text-footer-gray'>Site Map</Link></li>
+                        <li><Link href='/privacy-policy' className='text-footer-link text-footer-gray'>Privacy policy</Link></li>
                     </ul>
                 </div>
                 <div className='px-3 pt-10 col-span-2 flex flex-col gap-y-4 lg:cols-span-4 lg:pt-3'>
