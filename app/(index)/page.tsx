@@ -119,7 +119,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* More of Products of you */}
+      {/* More Products for you */}
       <section className='bg-white shadow-lg mb-3 rounded'>
         {/* Container */}
         <div className='flex flex-col p-3 xl:p-4 gap-y-2 xl:gap-y-4'>

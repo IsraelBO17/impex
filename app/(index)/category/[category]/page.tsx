@@ -1,6 +1,8 @@
-import React from 'react'
+import Image from 'next/image'
 import Categories from '@/components/index/categories';
 import ItemSkeleton from '@/components/index/itemskeleton';
+import s5 from '@/public/slides/5.jpg'
+
 
 const ProductPage = ({params}: {params: {category: string}}) => {
   const category = decodeURIComponent(params.category);
@@ -15,7 +17,7 @@ const ProductPage = ({params}: {params: {category: string}}) => {
           </div>
           {/* Category Banner */}
           <div className='lg:col-span-7 xl:col-span-8 shadow-lg'>
-            
+            <Image src={s5} alt='slide-5' className='h-full sm:h-auto lg:h-full' />
           </div>
         </div>
       </section>

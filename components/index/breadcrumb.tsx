@@ -3,8 +3,8 @@ import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 
 type CrumbItem = {
-    label: ReactNode; 
-    path: string; 
+    label: string; 
+    path: string;
 };
 
 type BreadcrumbsProps = {
@@ -21,7 +21,7 @@ const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
                         <>
                             <Link
                                 href={crumb.path}
-                                key={i}
+                                key={crumb.label}
                                 className="text-[#757575] font-normal hover:text-indigo-400 hover:underline"
                             >
                                 {crumb.label}
@@ -31,7 +31,7 @@ const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
                         </>
                     );
                 } else {
-                    return crumb.label;
+                    return crumb.label
                 }
             })}
         </div>

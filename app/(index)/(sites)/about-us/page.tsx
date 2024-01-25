@@ -34,13 +34,13 @@ const AboutUsPage = () => {
                     </p>
                     <h5 className='text-xl leading-[1.2] mb-2'><strong>Business Overview</strong></h5>
                     <p className='text-sm mb-4'>
-                        At IMPEX we decided to be one of Nigeria's largest online mall, Our mission at IMPEX is to be committed with the engineering of commerce and trade in Africa to ensuring the customers get the best online shopping experience.
+                        At IMPEX we decided to be one of Nigeria`&apos;`s largest online mall, Our mission at IMPEX is to be committed with the engineering of commerce and trade in Africa to ensuring the customers get the best online shopping experience.
                         <br /><br />
                         We created a retail customer base that continues to enlarge exponentially, offering great products and services that span various categories including Phones, Computers, Clothing, Shoes, Home Appliances, Books, healthcare, Baby Products, personal care and mu
                         <br /><br />
                         Our range of services are designed to ensure optimum levels of comfort and customer satisfaction with our services that include our lowest price guarantee.
                         <br /><br />
-                        We are highly committed towards finding innovative ways to improving our customers' shopping experience.
+                        We are highly committed towards finding innovative ways to improving our customers`&apos;` shopping experience.
                         <br /><br />
                         We would like a feedback on support@impex.com.ng. For any press related questions, kindly send us an email at info@impex.com.ng    
                         <br /><br />
