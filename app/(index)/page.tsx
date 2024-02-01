@@ -1,8 +1,9 @@
-import Link from "next/link"
 import MainSlide from "@/components/index/mainSlide"
 import Categories from "@/components/index/categories";
-import ItemSkeleton from "@/components/index/itemskeleton";
-import { FaArrowRightLong } from "react-icons/fa6";
+import FlashSales from "@/components/products/flash-sales";
+import RecommendedProducts from "@/components/products/recommended-products";
+import MoreProducts from "@/components/products/more-products";
+
 import { TbDiscount2 } from "react-icons/tb";
 import { TbShoppingBag } from "react-icons/tb";
 import { TbCreditCard } from "react-icons/tb";
@@ -77,67 +78,13 @@ const HomePage = () => {
       </section>
 
       {/* Flash Sales */}
-      <section className='bg-white shadow-lg rounded'>
-        <div className='flex flex-col'>
-          <h3 className='bg-destructive text-white font-semibold p-2'>Flash Sales</h3>
-          <div className='p-3 grid grid-cols-2'>
-            <div className='px-2'>
-              <ItemSkeleton />
-            </div>
-            <div className='px-2'>
-              <Link href='/' className='h-full border border-orange rounded-md flex flex-col items-center justify-center gap-y-2 md:max-w-40 md:ml-auto'>
-                <h5 className='text-3xl font-bold'>Shop<br />Now</h5>
-                <span className='p-2 text-white bg-orange text-2xl rounded-full'><FaArrowRightLong /></span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FlashSales />
 
       {/* Recommended for you */}
-      <section className='bg-white shadow-lg rounded'>
-        {/* Container */}
-        <div className='flex flex-col p-3 gap-y-2'>
-          <div className='flex justify-between items-center'>
-            <h5 className='text-destructive text-sm uppercase font-extrabold'>Recommended for you</h5>
-            <Link href='' className='text-orange text-xs font-bold'>See All &gt;&gt;</Link>
-          </div>
-          {/* Items */}
-          <div className='flex gap-x-4 overflow-x-scroll py-3'>
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-          </div>
-
-        </div>
-      </section>
+      <RecommendedProducts />
 
       {/* More Products for you */}
-      <section className='bg-white shadow-lg mb-3 rounded'>
-        {/* Container */}
-        <div className='flex flex-col p-3 xl:p-4 gap-y-2 xl:gap-y-4'>
-          <h3 className='text-destructive text-sm uppercase font-extrabold'>More products for you</h3>
-          <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-            <ItemSkeleton />
-          </div>
-        </div>
-      </section>
+      <MoreProducts />
     </>
   )
 }

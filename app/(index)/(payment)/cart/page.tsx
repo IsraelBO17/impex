@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Breadcrumbs from '@/components/index/breadcrumb'
 import delivery from '@/public/images/delivery.jpg'
-import ItemSkeleton from '@/components/index/itemskeleton'
+import {ItemSkeleton} from '@/components/index/itemskeleton'
 import Link from 'next/link'
 
 

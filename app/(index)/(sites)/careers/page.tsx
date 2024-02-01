@@ -22,7 +22,7 @@ const CareersPage = () => {
             <div className="grid grid-cols-2">
                 <div className='col-span-2 p-6 pt-12'>
                     <h3 className='font-extrabold text-2xl uppercase text-center'>Join our team</h3>
-                    <h6 className='text-center text-sm'>Let's build the next revolution together</h6>
+                    <h6 className='text-center text-sm'>Let`&apos;`s build the next revolution together</h6>
                 </div>
                 <div className='col-span-2 lg:col-span-1 p-6'>
                     <Image alt='careers' src={careers} />

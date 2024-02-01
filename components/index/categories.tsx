@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link';
+import { SheetClose } from '../ui/sheet';
 import { usePathname } from 'next/navigation';
 import { TbHanger } from "react-icons/tb";
 import { GiLipstick } from "react-icons/gi";
@@ -11,6 +12,7 @@ import { MdOutlineDirectionsCarFilled } from "react-icons/md";
 import { GoHome } from "react-icons/go";
 import { LiaTractorSolid } from "react-icons/lia";
 import { IoEllipsisHorizontalCircle } from "react-icons/io5";
+
 
 const categories = [
     {name: 'Fashion', href: '/category/fashion', icon: <TbHanger />},
@@ -25,8 +27,11 @@ const categories = [
     {name: 'Other Categories', href: '/category/others', icon: <IoEllipsisHorizontalCircle />},
 ]
 
+type CategoryProps = {
+    sidedrawer?: boolean
+}
 
-const Categories = () => {
+const Categories = ({sidedrawer}: CategoryProps) => {
 
     const pathname = usePathname()
 
@@ -34,7 +39,20 @@ const Categories = () => {
         <>
             <h5 className='text-destructive text-sm uppercase font-extrabold mb-2'>Categories</h5>
             <div className='flex flex-col gap-y-4 px-2'>
-                {categories.map((category) => {
+                {sidedrawer ? categories.map((category) => {
+                    return (
+                        <SheetClose key={category.name} asChild>
+                            <Link 
+                                href={category.href} 
+                                key={category.name} 
+                                className={`flex items-center gap-x-3 text-sm py-1 *:text-lg ${ pathname == encodeURI(category.href) ? 'text-orange font-bold' : ''}`}
+                            >
+                                {category.icon}{category.name}
+                            </Link>
+                        </SheetClose>
+                    )
+                }) :
+                categories.map((category) => {
                     return (
                         <Link 
                             href={category.href} 
@@ -44,7 +62,8 @@ const Categories = () => {
                             {category.icon}{category.name}
                         </Link>
                     )
-                })}
+                })
+                }
             </div>
         </>
     )

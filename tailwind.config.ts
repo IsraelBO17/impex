@@ -54,9 +54,7 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         footer: {
-          DEFAULT: "hsl(var(--footer))",
-          text: "hsl(var(--footer-foreground))",
-          gray: "hsl(var(--footer-link))",
+          gray: "hsl(var(--footer-gray))",
         }
       },
       borderRadius: {
@@ -77,9 +75,6 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-      },
-      fontSize: {
-        'footer-link': ['11px', {lineHeight: '1.5'}],
       },
     },
   },

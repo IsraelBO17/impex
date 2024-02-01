@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 
@@ -11,7 +10,7 @@ type BreadcrumbsProps = {
     items: CrumbItem[];
 };
 
-const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
+export default function Breadcrumbs ({ items }: BreadcrumbsProps) {
     return (
         <div className="flex gap-2 items-center text-xs font-bold">
             {items.map((crumb, i) => {
@@ -37,4 +36,3 @@ const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
         </div>
     );
 };
-export default Breadcrumbs;

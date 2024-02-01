@@ -1,5 +1,5 @@
 'use client'
-import React from "react"
+import {useRef} from "react"
 import Image from "next/image"
 import {
     Carousel,
@@ -15,7 +15,7 @@ import s5 from '@/public/slides/5.jpg'
 
 
 const MainSlide = () => {
-    const plugin = React.useRef(
+    const plugin = useRef(
         Autoplay({ delay: 7000, stopOnInteraction: true })
     )
     return (
